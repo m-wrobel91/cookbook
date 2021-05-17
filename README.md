@@ -83,7 +83,7 @@ Endpoints:
 ### UML class diagram
 Find below UML class diagram for the application:
 
-<UML DIAGRAM UNDER CONSTRUCTION>
+-UML DIAGRAM UNDER CONSTRUCTION-
 
 ### Built With
 
