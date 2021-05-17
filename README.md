@@ -70,7 +70,7 @@ This project was created in order to learn more on java web applications and acq
 Project was developed to get acquainted with basics of Angular. Front end is made on the base of Bootstrap templates. 
 
 
-Endpoints
+Endpoints:
 > POST /recipe/add addRecipe <br>
 > GET /recipe/all getAllRecipes<br>
 > DELETE /recipe/delete/{id} deleteRecipe<br>
