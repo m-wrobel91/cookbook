@@ -103,7 +103,7 @@ Project was developed to get acquainted with basics of Angular. Front end is mad
 
 
 
-Endpoints:
+Endpoints: <br>
 **Recipe entity**
 > **POST** /recipe/add  · *addRecipe*<br>
 > **GET** /recipe/all  · *getAllRecipes*<br>
@@ -111,9 +111,11 @@ Endpoints:
 > **GET** /recipe/find/{id}  · *getRecipeById*<br>
 > **PUT** /recipe/rate  · *rateRecipe*
 <br>
-**Recipe entity**
+
+**Comment entity**
 >**POST** /comment/add  · *addComment*<br>
 >**GET** /comment/find/{id}  · *getRecipeById*<br>
+>*more to be added*
 
 
 ### UML class diagram
