@@ -25,6 +25,10 @@ public class Recipe implements Serializable {
     @JoinColumn(name = "recipe_id", insertable = false, updatable = false)
     private List<Comment> comments;
 
+    public void addComment(Comment comment){
+        comments.add(comment);
+    }
+
     public void updateRating(Integer rating){
         if(1 <= rating && rating <= 5) {
             this.noOfVotes++;

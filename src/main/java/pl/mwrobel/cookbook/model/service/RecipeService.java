@@ -3,7 +3,7 @@ package pl.mwrobel.cookbook.model.service;
 import pl.mwrobel.cookbook.model.Recipe;
 
 import java.util.List;
-import java.util.UUID;
+
 
 public interface RecipeService {
 

@@ -39,7 +39,7 @@ public class RecipeServiceImpl implements RecipeService{
     }
     @Override
     public Recipe findRecipeById(Long id){
-        return recipeRepository.findById(id).orElseThrow(() -> new RecipeNotFoundException("Recipe by id " + id + "was not found"));
+        return recipeRepository.findById(id).orElseThrow(() -> new RecipeNotFoundException("Recipe by id " + id + " was not found"));
     }
     @Override
     public void deleteRecipe(Long id){
@@ -51,7 +51,7 @@ public class RecipeServiceImpl implements RecipeService{
     @Override
     public Recipe rateRecipe(Long id, Integer rating) {
 
-        Recipe ratedRecipe = recipeRepository.findById(id).orElseThrow(() -> new RecipeNotFoundException("Recipe by id " + id + "was not found"));
+        Recipe ratedRecipe = recipeRepository.findById(id).orElseThrow(() -> new RecipeNotFoundException("Recipe by id " + id + " was not found"));
         ratedRecipe.updateRating(rating);
         recipeRepository.save(ratedRecipe);
         return ratedRecipe;

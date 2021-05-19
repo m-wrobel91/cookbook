@@ -52,9 +52,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   
- Application is a simple cookbook that allows adding new recipes, update and delete existing ones. User also will be able look for the specific recipe using search option - functionality under construction. While adding or updating the entry the data inserted is validated - on the frontend. User also might look for the specific recipe while clicking *'Show more'* button. Recipes might be evaluated in range *1-5*. Each of the recipies contains number of votes and average grade.
+ Application is a simple cookbook that allows adding new recipes, update and delete existing ones. User also will be able look for the specific recipe using search option - *functionality under construction*. While adding or updating the entry the data inserted is validated - on the frontend. User also might look for the specific recipe while clicking *'Show more'* button. Recipes might be evaluated in range *1-5*. Each of the recipies contains number of votes and average rating.
 <br>
-In future the user will be able to log in and to let the comment under the recipe. 
+In future the user will be able to login and to add the comment under the recipe. 
 <br>
 For front-end code go to: <a href="https://github.com/m-wrobel91/cookbookGUI">Front-End Docs</a>
 
@@ -65,7 +65,7 @@ For front-end code go to: <a href="https://github.com/m-wrobel91/cookbookGUI">Fr
     <div style='color:grey'><sup>Fig.1 - Screenshot from the application with the Angular frontend.</sup></div>
     </figure>
 </div>
-This project was created in order to learn more on java web applications and acquire good programming habits. Great attention was paid on clean code rules while writing the code. Domain-driven-design principles were followed while building the application. Each of the domain layer has its own role in the application. CookBook is backed by H2 database. For retrieving and saving data to database JPA Repository was used. For testing the backend endpoints 'Swagger' was used.
+This project was created in order to learn more on java web applications and acquire good programming habits. Great attention was paid on clean code rules while writing the code. Domain-driven-design principles were followed while building the application. Each of the domain layer has its own role in the application. CookBook is backed by H2 database. For retrieving and saving data to database JPA Repository was used. For testing the backend API endpoints 'Swagger' was used.
 <br>
 Project was developed to get acquainted with basics of Angular. Front end is made on the base of Bootstrap templates. 
 
@@ -104,13 +104,16 @@ Project was developed to get acquainted with basics of Angular. Front end is mad
 
 
 Endpoints:
+**Recipe entity**
 > **POST** /recipe/add  · *addRecipe*<br>
 > **GET** /recipe/all  · *getAllRecipes*<br>
 > **DELETE** /recipe/delete/{id}  · *deleteRecipe*<br>
 > **GET** /recipe/find/{id}  · *getRecipeById*<br>
 > **PUT** /recipe/rate  · *rateRecipe*
-
-
+<br>
+**Recipe entity**
+>**POST** /comment/add  · *addComment*<br>
+>**GET** /comment/find/{id}  · *getRecipeById*<br>
 
 
 ### UML class diagram
